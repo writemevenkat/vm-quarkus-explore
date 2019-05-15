@@ -11,3 +11,20 @@ mvn compile quarkus:dev
 # Access the API 
 
 http://localhost:8080/event
+
+
+# Add OPEN API 
+
+mvn quarkus:add-extension -Dextensions="smallrye-openapi"
+
+# Look for swagger in 
+
+http://localhost:8080/openapi
+
+# Get to the swagger api using 
+
+http://localhost:8080/swagger-ui/#/
+
+
+
+
